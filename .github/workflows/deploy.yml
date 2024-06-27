@@ -11,8 +11,8 @@ jobs:
   test:
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.sjq5vkg.mongodb.net
-      MONGODB_DB_USERNAME: ${{ secrets.MONGODB_DB_USERNAME }}
-      MONGODB_DB_PASSWORD: ${{ secrets.MONGODB_DB_PASSWORD }}
+      MONGODB_USERNAME: ${{ secrets.MONGODB_DB_USERNAME }}
+      MONGODDB_PASSWORD: ${{ secrets.MONGODB_DB_PASSWORD }}
       PORT: 8080
 
     environment: testing
@@ -43,3 +43,5 @@ jobs:
           echo "MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}"
           echo "MONGODB_DB_NAME: $MONGO_DB_NAME"
 
+
+        
